@@ -105,6 +105,11 @@ export default async function Home() {
                 LinkedIn
               </a>
             </div>
+            <div>
+              <a className="btn" href={`tel:${PROFILE.phonenumber}`}>
+                  {PROFILE.phonenumber}
+              </a>
+            </div>
           </div>
         </section>
       </main>

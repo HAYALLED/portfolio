@@ -9,7 +9,7 @@ export const PROFILE = {
   email: "ilhanegemen45@gmail.com",
   github: "https://github.com/HAYALLED",
   linkedin: "https://www.linkedin.com/in/ilhan-egemen-durmu%C5%9F-459bb2330/",
-  phonenumber:"90+05422401362"
+  phonenumber:"905422401362"
 } as const;
 
 export type SkillLevel = "top" | "high" | "mid";
