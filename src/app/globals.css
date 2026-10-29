@@ -242,7 +242,7 @@ section { padding: 96px 0; }
 .card:hover { border-color: var(--accent); transform: translateY(-4px); }
 .card h3 { font-size: 1.15rem; }
 .card .tags { margin-top: auto; }
-.card-link { color: var(--accent); font-size: 0.95rem; font-weight: 500; }
+.card-links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 .card-link:hover { text-decoration: underline; text-underline-offset: 4px; }
 .card-link.disabled { color: var(--muted); }
 
@@ -250,6 +250,7 @@ section { padding: 96px 0; }
 .badge-online { color: #4ade80; border-color: rgba(74, 222, 128, 0.4); }
 .badge-game { color: #a78bfa; border-color: rgba(167, 139, 250, 0.4); }
 .badge-wip { color: #fbbf24; border-color: rgba(251, 191, 36, 0.4); }
+.badge-abandoned { color: #8b95a1; border-color: rgba(139, 149, 161, 0.4); }
 
 .footer {
   display: flex;

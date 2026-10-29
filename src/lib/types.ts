@@ -1,4 +1,4 @@
-export type ProjectStatus = "online" | "game" | "wip";
+export type ProjectStatus = "online" | "game" | "wip" | "abandoned";
 
 export interface Project {
   id: string;
@@ -8,5 +8,6 @@ export interface Project {
   status: ProjectStatus;
   url: string | null;
   repo_url: string | null;
+  show_second_url: boolean;
   sort_order: number;
 }

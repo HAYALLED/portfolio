@@ -18,7 +18,7 @@ export async function getProjects(): Promise<ProjectsResult> {
   if (!supabase) return { projects: [], failed: true };
   const { data, error } = await supabase
     .from("projects")
-    .select("id,title,description,tags,status,url,repo_url,sort_order")
+    .select("id,title,description,tags,status,url,repo_url,show_second_url,sort_order")
     .order("sort_order", { ascending: true })
     .order("created_at", { ascending: false });
   if (error) {

@@ -9,6 +9,7 @@ const FILTERS = [
   { key: "online", label: "Online" },
   { key: "game", label: "Oyun" },
   { key: "wip", label: "Devam eden" },
+  { key: "abandoned", label: "Terk edilen" },
 ] as const;
 
 type Filter = (typeof FILTERS)[number]["key"];
@@ -17,7 +18,7 @@ export default function Projects({ projects, failed }: { projects: Project[]; fa
   const [filter, setFilter] = useState<Filter>("all");
 
   const counts = useMemo(() => {
-    const c: Record<Filter, number> = { all: projects.length, online: 0, game: 0, wip: 0 };
+    const c: Record<Filter, number> = { all: projects.length, online: 0, game: 0, wip: 0, abandoned: 0 };
     for (const p of projects) c[p.status] += 1;
     return c;
   }, [projects]);
